@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Business Plan - Tugas PKWU</title>
+    <style>
+        /* --- RESET & BASE STYLES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        /* --- HEADER & LOGO --- */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .logo-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            background-color: white;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('gambar/iii.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #d35400;
+        }
+
+        /* --- SECTIONS GENERAL --- */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h3.section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            border-bottom: 3px solid #e67e22;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* --- BOOK CONTENT --- */
+        .book-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .book-cover {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .book-cover img {
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+
+        .book-desc {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* --- BARCODE SECTION (BOOK) --- */
+        .barcode-section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .barcode-display img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* --- SOCIAL MEDIA BARCODE --- */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .social-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-card img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+
+        .social-card p {
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HEADER DENGAN 2 LOGO -->
+    <header>
+        <div class="logo-container">
+            <!-- Ganti src dengan file logo Anda (contoh: logo1.png) -->
+            <img src="gambar/monoelys.jpeg" alt="Logo 1" class="logo">
+        </div>
+        <h1>MONOELYS</h1>
+        <div class="logo-container">
+            <!-- Ganti src dengan file logo Anda (contoh: logo2.png) -->
+            <img src="gambar/logo sman 5 tangsel.jfif" alt="Logo 2" class="logo">
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h2>Panduan Membuat Business Plan</h2>
+        <p>Membuat Batik Menjadi Sebuah Fashion.</p>
+        <a href="#membaca" class="btn">Scan untuk membaca</a>
+    </div>
+
+    <!-- TENTANG BUKU -->
+    <section id="tentang">
+        <h3 class="section-title">Tentang Buku Ini</h3>
+        <div class="book-content">
+            <div class="book-cover">
+                <!-- Ganti dengan gambar cover buku Anda -->
+                <img src="gambar/cover.jpeg" alt="Cover Buku Business Plan">
+            </div>
+            <div class="book-desc">
+                <h4>Whisper Of Nature</h4>
+                <h4>Buatan Anak SMAN 5 Tangerang Selatan</h4>
+                <p>Buku ini adalah panduan komprehensif yang mengajarkan Anda:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Cara memulai sebuah usaha.</li>
+                    <li>Menyusun struktur organisasi usaha.</li>
+                    <li>ada juga proses pembuatan batik.</li>
+                    <li>dari batik menjadi sebuah fashion.</li>
+                    <li>aspek pemasaran.</li>
+                    <li>dll.</li>
+                </ul>
+                <p style="margin-top: 15px;">buku ini disusun dengan sedemikian rupa supaya wirausaha pemula dapat mengembangkan usahanya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUKU DALAM BENTUK BARCODE (LINK buku) -->
+    <section id="beli" style="background-color: #eef2f3;">
+        <h3 class="section-title">Ayo Ikuti Kami</h3>
+        <p style="margin-bottom: 20px;">Scan barcode di bawah ini untuk melihat detail tentang buku ini.</p>
+        <div class="barcode-section">
+            <div class="barcode-display">
+                <!-- Ganti dengan gambar Barcode Buku Anda (ISBN atau Link Toko) -->
+                <img src="gambar/buu.png" alt="Barcode Buku">
+                <p style="font-size: 0.9rem; color: #777;">ISBN: 978-602-0000-00-0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEDIA SOSIAL MENGGUNAKAN BARCODE (QR CODE) -->
+    <section id="sosmed">
+        <h3 class="section-title">Ikuti Kami (Scan QR Code)</h3>
+        <p style="margin-bottom: 30px;">Hubungi kami atau ikuti perkembangan terbaru melalui media sosial di bawah ini.</p>
+        
+        <div class="social-grid">
+            <!-- Sosmed 1: Instagram -->
+            <div class="social-card">
+                <!-- Ganti dengan QR Code Profil Instagram Anda -->
+                <img src="gambar/ig.png" alt="QR Instagram">
+                <p>Instagram</p>
+            </div>
+
+            <!-- Sosmed 2: WhatsApp -->
+            <div class="social-card">
+                <!-- Ganti dengan QR Code Nomor WA Anda -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/628987687535" alt="QR WhatsApp">
+                <p>WhatsApp</p>
+            </div>
+
+            <!-- Sosmed 3: Link Pembelian Produk Fashion Kami -->
+            <div class="social-card">
+                <!-- Ganti dengan QR Code Link Toko Online -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tokopedia.com" alt="QR Toko Online">
+                <p>Produk Fashion Kami</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Tugas PKWU - Buku Business Plan. Dibuat untuk Menyelesaikan Ujian Praktek.</p>
+    </footer>
+
+</body>
+</html>
